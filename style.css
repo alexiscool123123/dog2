@@ -12,6 +12,7 @@ body {
 }
 
 #link {
+  overflow: hidden;
   position: absolute;
   z-index: 1;
   background-color: rgba(0,0,0, 0.5);
@@ -26,6 +27,7 @@ body {
 }
 
 #controller {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: calc(30vw - 20px);
@@ -34,6 +36,7 @@ body {
   cursor: grab;
 }
 #controller div {
+  overflow: hidden;
   display: inline-block;
   font-size: 15px;
   line-height: 90px;
@@ -46,6 +49,7 @@ body {
 }
 
 #img1 {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -56,6 +60,7 @@ body {
   height: 100vh;
 }
 #img2 {
+  overflow: hidden;
   z-index: -1;
   position: absolute;
   top: 0;
@@ -69,13 +74,16 @@ body {
 
 @media only screen {
   body {
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
   }
   #img1 {
+    overflow: hidden;
     background-size: 100vw auto;
   }
   #img2 {
+    overflow: hidden;
     background-size: 100vw auto;
   }
 }
