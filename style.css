@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  position: relative;
+  height: 864px;
+  width: 1536px;
+}
+
+#link {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  display: inline-block;
+  padding: 3px 7px;
+  margin: 2px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: arial;
+  text-decoration: none;
+}
+
+#controller {
+  position: absolute;
+  top: 0;
+  left: calc(30vw - 20px);
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+#controller div {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 90px;
+  color: white;
+}
+#line {
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+#img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://juxtapose.knightlab.com/static/img/Sochi_11April2005.jpg), rgba(255,255,255, 0.5);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 30vw;
+  height: 100%;
+}
+#img2 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(20241008_110945_edited.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  #img1 {
+    background-size: 100vw auto;
+  }
+  #img2 {
+    background-size: 100vw auto;
+  }
+}
