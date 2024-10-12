@@ -5,8 +5,8 @@
 }
 body {
   position: relative;
-  height: 530px;
-  width: 1500px;
+    width: 100vw;
+    height: 100vh;
 }
 
 #link {
