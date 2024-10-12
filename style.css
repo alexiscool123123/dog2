@@ -5,8 +5,8 @@
 }
 body {
   position: relative;
-  height: 550px;
-  width: 900px;
+  height: 520px;
+  width: 1000px;
 }
 
 #link {
@@ -67,7 +67,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
   #img1 {
